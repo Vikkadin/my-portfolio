@@ -59,6 +59,10 @@ body {
   font-family: var(--main-font), sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
 h1,
 h2 {
   color: var(--text-color);
@@ -112,4 +116,13 @@ h2 {
   color: var(--brand-color);
   box-shadow: 0 0.5em 0.5em -0.4em var(--brand-color);
   transform: translateY(-0.25em);
+}
+
+.custom-card {
+  background-color: #424657;
+}
+
+.custom-shadow {
+  filter: drop-shadow(7px 8px 22px #000000)
+    drop-shadow(-4px 2px 16px rgba(217, 217, 217, 0.25));
 }
