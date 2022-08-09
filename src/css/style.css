@@ -1,37 +1,115 @@
-@font-face {
-    font-family: "Poppins";
-    src: url("./src/fonts/Poppins-Regular.woff2") format("woff2");
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Poppins";
-    src: url("./src/fonts/Poppins-SemiBold.woff2") format("woff2");
-    font-weight: 600;
-    font-display: swap;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Poppins";
-    src: url("./src/fonts/fonts/Poppins-Bold.woff2") format("woff2");
-    font-weight: 700;
-    font-display: swap;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "Archistico";
-    src: url("./src/fonts/fonts/Archistico_Bold.woff2") format("woff2");
-    font-weight: 700;
-    font-display: swap;
-    font-style: normal;
-  }
+:root {
+  --light-color: #e5eaf5;
+  --text-color: #dfc8fa;
+  --dark-color: #353846;
+  --main-color: #8458b8;
+  --brand-color: rgb(64, 147, 189);
+  --soft-color: #a0d2eb;
+  --accent-color: rgb(232, 82, 255);
+  --gradient: linear-gradient(
+    91.53deg,
+    #4093bd 4.84%,
+    #dfc8fa 54.14%,
+    #e852ff 99.5%
+  );
+  --main-font: "Poppins";
+}
 
-  @font-face {
-    font-family: "WaitingfortheSunrise";
-    src: url("./src/fonts/fonts/WaitingfortheSunrise-Regular") format("woff2");
-    font-weight: 700;
-    font-display: swap;
-    font-style: normal;
-  }
+@font-face {
+  font-family: "Poppins";
+  src: url("./src/fonts/Poppins-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./src/fonts/Poppins-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./src/fonts/fonts/Poppins-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Archistico";
+  src: url("./src/fonts/fonts/Archistico_Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WaitingfortheSunrise";
+  src: url("./src/fonts/fonts/WaitingfortheSunrise-Regular") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-family: var(--main-font), sans-serif;
+}
+
+h1,
+h2 {
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.full-height {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  border-bottom: 2px solid var(--brand-color);
+}
+
+.title-name {
+  font-family: "Archistico";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 82px;
+  line-height: 93px;
+  color: var(--brand-color);
+}
+
+.custom-btn {
+  padding: 16px 32px;
+
+  background: linear-gradient(
+    97.18deg,
+    #8458b8 -12.73%,
+    rgba(38, 42, 63, 0) 133.76%
+  );
+  box-shadow: drop-shadow(7px 8px 22px #000000)
+    drop-shadow(-4px 2px 16px rgba(217, 217, 217, 0.25));
+  border-radius: 30px;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+.custom-btn:hover,
+.custom-btn:focus {
+  background: linear-gradient(
+    97.18deg,
+    #8458b8 -12.73%,
+    rgba(38, 42, 63, 0) 133.76%
+  );
+  filter: drop-shadow(7px 8px 22px #000000)
+    drop-shadow(-4px 2px 16px rgba(217, 217, 217, 0.25));
+  color: var(--brand-color);
+  box-shadow: 0 0.5em 0.5em -0.4em var(--brand-color);
+  transform: translateY(-0.25em);
+}
