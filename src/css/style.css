@@ -103,6 +103,29 @@ a:hover {
   border-bottom: 2px solid var(--brand-color);
 }
 
+.custom-decoration {
+  display: inline-block;
+  position: relative;
+}
+
+.custom-decoration::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent-color);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.custom-decoration:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .logo-name {
   font-family: "Archistico";
   font-style: normal;
@@ -122,7 +145,7 @@ a:hover {
 
 .custom-btn {
   padding: 16px 32px;
-
+  max-height: 54px;
   background: linear-gradient(
     97.18deg,
     #8458b8 -12.73%,
@@ -155,7 +178,12 @@ a:hover {
 
 .custom-shadow {
   filter: drop-shadow(7px 8px 22px #000000)
-    drop-shadow(-4px 2px 16px rgba(217, 217, 217, 0.25));
+  drop-shadow(-4px 2px 16px rgba(217, 217, 217, 0.25));
+}
+
+.custom-shadow:hover {
+  filter: drop-shadow(8px 8px 4px #4093bd);
+  transform: translateY(-0.25em);
 }
 
 .footer-block {
@@ -168,9 +196,33 @@ a:hover {
 
 .footer-icon {
   padding-left: 10px;
-  width: 10%
+  width: 10%;
 }
 
 svg {
   background: var(--dark-color);
+}
+
+/* About Me */
+
+.my-photo {
+  max-width: 400px;
+  border: solid 18px var(--brand-color);
+}
+
+.my-photo:hover {
+  box-shadow: 10px 11px 15px rgba(214, 0, 249, 0.4);
+  border: solid 12px var(--brand-color);
+  transition: 0.5s ease-in-out;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #424657;
+  border-radius: 100px;
+  font-size: 24px;
 }
