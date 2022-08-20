@@ -13,6 +13,7 @@
     #e852ff 99.5%
   );
   --main-font: "Poppins";
+  --sidbar-width: 220px;
 }
 
 @font-face {
@@ -90,6 +91,34 @@ a {
 
 a:hover {
   color: var(--accent-color);
+}
+
+.title-name {
+  font-family: "Archistico";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 82px;
+  line-height: 93px;
+  color: var(--brand-color);
+}
+
+.title-name:hover {
+  color: transparent;
+  background-image: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 300px 300px;
+  background-position: 0 0;
+  animation: bp 0.5s infinite linear;
+}
+
+@keyframes bp {
+  from {
+    background-position-x: 50px;
+  }
+  to {
+    background-position-x: 300px;
+  }
 }
 
 .full-height {
@@ -202,6 +231,62 @@ a:hover {
 svg {
   background: var(--dark-color);
 }
+
+/* NAVAR */
+
+.navbar {
+  background: var(--brand-color);
+}
+
+.logo-name {
+  font-family: "Archistico";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 36px;
+}
+
+  .navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  
+  .navbar .nav-link:hover {
+    color: var(--accent-color);
+  }
+  
+  .navbar .nav-link.active {
+    color: var(--dark-color);
+    text-decoration: underline;
+  }
+
+@media (min-width: 992px) {
+  .navbar {
+    min-height: 100vh;
+    width: var(--sidbar-width);
+    background: var(--main-color);
+    border-radius: 0px 0px 280px 0px;
+    transition: 1s;
+  }
+
+  .navbar:hover {
+    transition: 1s;
+    border-radius: 0px 280px 0px 0px;
+  }
+
+  .navbar .nav-link {
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+  .wrapper {
+    padding-left: var(--sidbar-width);
+  }
+}
+
 
 /* About Me */
 
@@ -332,11 +417,10 @@ li {
     font-size: 14px;
   }
 
-.work-card .work-info {
-  top: 0;
-  left: 0;
-}
-
+  .work-card .work-info {
+    top: 0;
+    left: 0;
+  }
 
   .custom-btn {
     font-size: 14px;
