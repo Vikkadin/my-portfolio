@@ -338,23 +338,23 @@ li {
   list-style: none;
 }
 
-.contact-menu {
+.work-list {
   width: 800px;
   margin: 60px auto 0 auto;
   border-radius: 10px;
   overflow: hidden;
 }
 
-.contact-menu li:first-child:hover ~ .bg {
+.work-list li:first-child:hover ~ .bg {
   background: #a0d2eb;
 }
-.contact-menu li:nth-child(2):hover ~ .bg {
+.work-list li:nth-child(2):hover ~ .bg {
   background: #4093bd;
 }
-.contact-menu li:nth-child(3):hover ~ .bg {
+.work-list li:nth-child(3):hover ~ .bg {
   background: #8458b8;
 }
-.contact-menu li:nth-child(4):hover ~ .bg {
+.work-list li:nth-child(4):hover ~ .bg {
   background: #e852ff;
 }
 
@@ -396,7 +396,7 @@ li {
   top: 20%;
   left: 10%;
   z-index: 3;
-  transform: translateY(30px);
+  transform: translateY(20px);
   transition: 0.5s all;
   opacity: 0;
 }
@@ -428,5 +428,15 @@ li {
   .custom-btn {
     font-size: 14px;
     padding: 12px 28px;
+  }
+
+  .work-card .work-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transform: translateY(10px);
+    transition: 0.5s all;
+    opacity: 0;
   }
 }
