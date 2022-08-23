@@ -46,14 +46,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "WaitingfortheSunrise";
-  src: url("./src/fonts/fonts/WaitingfortheSunrise-Regular") format("woff2");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-
 body {
   background-color: var(--dark-color);
   color: var(--light-color);
@@ -210,11 +202,6 @@ a:hover {
     drop-shadow(-4px 2px 16px rgba(217, 217, 217, 0.25));
 }
 
-.custom-shadow:hover {
-  filter: drop-shadow(8px 8px 4px #4093bd);
-  transform: translateY(-0.25em);
-}
-
 .footer-block {
   display: flex;
   flex-direction: row-reverse;
@@ -232,9 +219,10 @@ svg {
   background: var(--dark-color);
 }
 
-/* NAVAR */
+/* NAVBAR */
 
-.navbar {
+.main-navbar,
+.page-navbar {
   background: var(--brand-color);
 }
 
@@ -246,25 +234,27 @@ svg {
   line-height: 36px;
 }
 
-  .navbar .nav-link {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 18px;
-    line-height: 27px;
-  }
-  
-  .navbar .nav-link:hover {
-    color: var(--accent-color);
-  }
-  
-  .navbar .nav-link.active {
-    color: var(--dark-color);
-    text-decoration: underline;
-  }
+.main-navbar .nav-link,
+.page-navbar .nav-link {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.main-navbar .nav-link:hover,
+.page-navbar .nav-link:hover {
+  color: var(--accent-color);
+}
+
+.main-navbar .nav-link.active,
+.page-navbar .nav-link.active {
+  color: var(--dark-color);
+}
 
 @media (min-width: 992px) {
-  .navbar {
+  .main-navbar {
     min-height: 100vh;
     width: var(--sidbar-width);
     background: var(--main-color);
@@ -272,12 +262,16 @@ svg {
     transition: 1s;
   }
 
-  .navbar:hover {
+  .page-navbar {
+    border-radius: 0px 0px 280px 0px;
+  }
+
+  .main-navbar:hover {
     transition: 1s;
     border-radius: 0px 280px 0px 0px;
   }
 
-  .navbar .nav-link {
+  .main-navbar .nav-link {
     font-size: 24px;
     line-height: 38px;
   }
@@ -286,7 +280,6 @@ svg {
     padding-left: var(--sidbar-width);
   }
 }
-
 
 /* About Me */
 
@@ -413,6 +406,16 @@ li {
 }
 
 @media (max-width: 667px) {
+  .title-name {
+    font-size: 64px;
+    line-height: 73px;
+  }
+
+  .logo-name {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
   .work-info p {
     font-size: 14px;
   }

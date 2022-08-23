@@ -23,10 +23,12 @@
     <link rel="stylesheet" href="./src/css/style.css" />
     <title>Vika Kelii</title>
   </head>
-  <body data-bs-spy="scroll" data-bs-target=".navbar">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-shadow">
+  <body data-bs-spy="scroll" data-bs-target=".main-navbar">
+    <nav
+      class="navbar main-navbar navbar-expand-lg navbar-dark fixed-top custom-shadow"
+    >
       <div class="container flex-lg-column">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="index.html"
           ><span class="h3 fw-bold d-block d-lg-none logo-name"
             >Vika Kelii</span
           ></a
@@ -57,14 +59,16 @@
       <section id="home" class="full-height px-lg-5 m-2">
         <div class="container">
           <div class="row">
-            <div class="col-lg-8" data-aos="fade-down">
+            <div class="col-lg-10" data-aos="fade-down">
               <h1 class="display-4 fw-bold">
                 HI! I'M
                 <div class="title-name">Vika Kelii</div>
               </h1>
               <h2>Front-end developer from Kyiv, Ukraine</h2>
               <div>
-                <a href="contact.html" class="btn custom-btn me-3 mt-5">Contact Me</a>
+                <a href="contact.html" class="btn custom-btn me-3 mt-5"
+                  >Contact Me</a
+                >
               </div>
             </div>
           </div>
@@ -191,6 +195,7 @@
                   <a
                     href="https://vikkadin.github.io/offerPage/"
                     class="btn custom-btn m-2"
+                    target="_blank"
                     >Learn More</a
                   >
                 </div>
@@ -216,6 +221,7 @@
                   <a
                     href="https://all-the-weather.netlify.app/"
                     class="btn custom-btn m-2"
+                    target="_blank"
                     >Learn More</a
                   >
                 </div>
@@ -226,11 +232,11 @@
             <div class="custom-card p-4 rounded-4 custom-shadow mt-5 mb-5">
               <div class="d-flex justify-content-between">
                 <div class="col-6 ps-lg-3 pt-4">
-                <h3>See more completed projects</h3>
-              </div>
-              <div class="col-6 text-end pe-lg-3 pt-3 pb-3">
-                <a href="work.html" class="btn custom-btn m-2">More Works</a>
-              </div>
+                  <h3>See more completed projects</h3>
+                </div>
+                <div class="col-6 text-end pe-lg-3 pt-3 pb-3">
+                  <a href="work.html" class="btn custom-btn m-2">More Works</a>
+                </div>
               </div>
             </div>
           </div>
@@ -247,23 +253,36 @@
           </div>
           <div class="row pt-5 pb-5" data-aos="fade-up" data-aos-delay="300">
             <div class="custom-card p-4 rounded-4 custom-shadow mt-5 mb-5">
-              <div class="d-flex">
+              <div class="d-flex justify-content-between">
                 <div class="col-6 ps-lg-3 pt-3 pb-3">
                   <h3>My E-mail & Socials</h3>
-                  <a href="mailto:viktoriiakelii@gmail.com" class="custom-decoration pe-3"> viktoriiakelii@gmail.com </a>
+                  <a
+                    href="mailto:viktoriiakelii@gmail.com"
+                    class="custom-decoration pe-3"
+                  >
+                    viktoriiakelii@gmail.com
+                  </a>
                   <div class="social-icons pt-3">
-                    <a href="https://www.linkedin.com/in/vika-kelii/" class="custom-shadow me-3"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Vikkadin" class="custom-shadow"><i class="fa-brands fa-github"></i></a>
+                    <a
+                      href="https://www.linkedin.com/in/vika-kelii/"
+                      class="custom-shadow me-3"
+                      ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                    <a href="https://github.com/Vikkadin" class="custom-shadow"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </div>
                 </div>
-              </div>
-              <div class="col-6 text-end pe-lg-3 pt-5">
-                <a href="contact.html" class="btn custom-btn m-2">Send Messege</a>
-              </div>
+                <div class="col-6 text-end pt-3">
+                  <a href="contact.html" class="btn custom-btn m-2"
+                    >Send Messege</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-          </div>
-          </section>
+        </div>
+      </section>
 
       <footer class="py-5 px-lg-5">
         <div class="container">
@@ -283,6 +302,7 @@
                 <a
                   href="https://www.shecodesfoundation.org/ukraine"
                   class="custom-decoration"
+                  target="_blank"
                   >SheCodes Foundation</a
                 >
               </div>

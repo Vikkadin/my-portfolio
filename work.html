@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://kit.fontawesome.com/bf2850c7e5.js"
       crossorigin="anonymous"
@@ -19,120 +24,162 @@
   </head>
 
   <body>
+    <nav class="navbar page-navbar navbar-expand-lg navbar-dark custom-shadow">
       <div class="container">
-        <div class="row mt-5 ms-5">
-          <div class="col-lg-6 mt-5 pt-5">
-            <h1 class="display-5 fw-bold">
-              Take a look at what I've been working on
-            </h1>
-          </div>
-          <div
+        <a class="navbar-brand" href="index.html"
+          ><span class="h3 fw-bold d-block logo-name">Vika Kelii</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="work.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row mt-5 ms-5">
+        <div class="col-lg-6 mt-5 pt-5">
+          <h1 class="display-5 fw-bold">
+            Take a look at what I've been working on
+          </h1>
+        </div>
+        <div
           class="col-lg-6 d-none d-lg-block"
           data-aos="zoom-out-left"
           data-aos-delay="600"
         >
           <svg view-box="0 0 800 600" width="400" height="300"></svg>
         </div>
+      </div>
+    </div>
+    <section id="contact" class="full-height">
+      <div class="container">
+        <div class="row">
+          <ul class="contact-menu">
+            <li>
+              <div class="work-card">
+                <img
+                  class="rounded-4 cover-1"
+                  src="src/img/coffe-app.png"
+                  alt="coffe app preview"
+                />
+                <div class="work-info p-4">
+                  <h4>Coffe App</h4>
+                  <p>
+                    A simple coffee offer page with a call to action and email
+                    form for visitors.
+                  </p>
+                  <a
+                    href="https://vikkadin.github.io/offerPage/"
+                    class="btn custom-btn m-2"
+                    target="_blank"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="work-card">
+                <img
+                  class="rounded-4 cover-2"
+                  src="src/img/weather-app.png"
+                  alt="weather app preview"
+                />
+                <div class="work-info p-4">
+                  <h4>Weather App</h4>
+                  <p>
+                    Weather app using which you can check the current weather
+                    forecast for any city in the world and in your current
+                    location.
+                  </p>
+                  <a
+                    href="https://all-the-weather.netlify.app/"
+                    class="btn custom-btn m-2"
+                    target="_blank"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="work-card">
+                <img
+                  class="rounded-4 cover-3"
+                  src="src/img/online-school-lending.png"
+                  alt="online school lending preview"
+                />
+                <div class="work-info p-4">
+                  <h4>Online School Website</h4>
+                  <p>
+                    A landing page for an online professional development school
+                    for elementary school teachers with a benefits section,
+                    teachers, prices, and a course registration form.
+                  </p>
+                  <a
+                    href="https://online-school-landing.netlify.app/"
+                    class="btn custom-btn m-2"
+                    target="_blank"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="work-card">
+                <img
+                  class="rounded-4 cover-4"
+                  src="src/img/building-company-site.png"
+                  alt="building companysite  preview"
+                />
+                <div class="work-info p-4">
+                  <h4>Building Company Site</h4>
+                  <p>
+                    Website home page for a construction company with benefits
+                    section, promotional video, recent projects, services and
+                    contact form.
+                  </p>
+                  <a
+                    href="https://building-company-vk.netlify.app/"
+                    class="btn custom-btn m-2"
+                    target="_blank"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="bg"></li>
+          </ul>
         </div>
       </div>
-      <section id="contact" class="full-height">
-        <div class="container">
-          <div class="row">
-              <ul class="contact-menu">
-                <li>
-                  <div class="work-card">
-                    <img
-                      class="rounded-4 cover-1"
-                      src="src/img/coffe-app.png"
-                      alt="coffe app preview"
-                    />
-                    <div class="work-info p-4">
-                      <h4>Coffe App</h4>
-                      <p>
-                        A simple coffee offer page with a call to action and
-                        email form for visitors.
-                      </p>
-                      <a
-                        href="https://vikkadin.github.io/offerPage/"
-                        class="btn custom-btn m-2" target="_blank"
-                        >Learn More</a
-                      >
-                    </div>
-                  </div>
-                </li>
-                <li>
-                    <div class="work-card">
-                  <img
-                    class="rounded-4 cover-2"
-                    src="src/img/weather-app.png"
-                    alt="weather app preview"
-                  />
-                  <div class="work-info p-4">
-                    <h4>Weather App</h4>
-                    <p>
-                      Weather app using which you can check the current weather
-                      forecast for any city in the world and in your current
-                      location.
-                    </p>
-                    <a
-                      href="https://all-the-weather.netlify.app/"
-                      class="btn custom-btn m-2" target="_blank"
-                      >Learn More</a
-                    >
-                  </div>
-                </div>
-                </li>
-                <li>
-                    <div class="work-card">
-                  <img
-                    class="rounded-4 cover-3"
-                    src="src/img/online-school-lending.png"
-                    alt="online school lending preview"
-                  />
-                  <div class="work-info p-4">
-                    <h4>Online School Website</h4>
-                    <p>
-                      A landing page for an online professional development
-                      school for elementary school teachers with a benefits
-                      section, teachers, prices, and a course registration form.
-                    </p>
-                    <a href="#" class="btn custom-btn m-2">Learn More</a>
-                  </div>
-                </div>
-                </li>
-                <li>
-                    <div class="work-card">
-                  <img
-                    class="rounded-4 cover-4"
-                    src="src/img/building-company-site.png"
-                    alt="building companysite  preview"
-                  />
-                  <div class="work-info p-4">
-                    <h4>Building Company Site</h4>
-                    <p>
-                      Website home page for a construction company with benefits
-                      section, promotional video, recent projects, services and
-                      contact form.
-                    </p>
-                    <a
-                      href="https://building-company-vk.netlify.app/"
-                      class="btn custom-btn m-2" target="_blank"
-                      >Learn More</a
-                    >
-                  </div>
-                </div>
-                </li>
-                <li class="bg"></li>
-              </ul>
-            </div>
-          </div>
-      </section>
-      <section class="px-lg-5 m-2">
-        <div class="container">
-          <div class="row pt-5 pb-5">
-            <div class="custom-card p-4 rounded-4 custom-shadow mt-5 mb-5">
-              <div class="d-flex justify-content-between">
-                <div class="col-6 ps-lg-3 pt-3 pb-3">
+    </section>
+    <section class="px-lg-5 m-2">
+      <div class="container">
+        <div class="row pt-5 pb-5">
+          <div class="custom-card p-4 rounded-4 custom-shadow mt-5 mb-5">
+            <div class="d-flex justify-content-between">
+              <div class="col-6 ps-lg-3 pt-3 pb-3">
                 <h3 class="display-5 fw-bold">Work Inquiry</h3>
                 <p class="mb-0">
                   Let’s work together and i’ll help you by all my best
@@ -141,25 +188,37 @@
               <div class="col-6 text-end pe-lg-3 pt-3 pb-3">
                 <a href="contact.html" class="btn custom-btn m-2">Let’s talk</a>
               </div>
-              </div>
             </div>
           </div>
         </div>
-      </section>
-      <footer class="py-5 px-lg-5">
-        <div class="container">
-            <div class="row gy-4 justify-content-between">
-                <div class="col-auto">
-                    <a href="mailto:viktoriiakelii@gmail.com" class="custom-decoration"> viktoriiakelii@gmail.com </a>
-                </div>
-                <div class="col-auto">
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/vika-kelii/" class="custom-shadow me-3"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/Vikkadin" class="custom-shadow"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
+      </div>
+    </section>
+    <footer class="py-5 px-lg-5">
+      <div class="container">
+        <div class="row gy-4 justify-content-between">
+          <div class="col-auto">
+            <a href="mailto:viktoriiakelii@gmail.com" class="custom-decoration">
+              viktoriiakelii@gmail.com
+            </a>
+          </div>
+          <div class="col-auto">
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/vika-kelii/"
+                class="custom-shadow me-3"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://github.com/Vikkadin"
+                class="custom-shadow"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
     <script src="src/js/main.js"></script>
   </body>
