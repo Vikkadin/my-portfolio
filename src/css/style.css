@@ -407,11 +407,13 @@ li {
 
 @media (max-width: 667px) {
   .title-name {
+    font-family: "Archistico";
     font-size: 64px;
     line-height: 73px;
   }
 
   .logo-name {
+    font-family: "Archistico";
     font-size: 32px;
     line-height: 36px;
   }
