@@ -278,6 +278,7 @@ svg {
 
   .wrapper {
     padding-left: var(--sidbar-width);
+    overflow: hidden;
   }
 }
 
