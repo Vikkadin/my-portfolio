@@ -278,7 +278,6 @@ svg {
 
   .wrapper {
     padding-left: var(--sidbar-width);
-    overflow: hidden;
   }
 }
 
@@ -441,5 +440,9 @@ li {
     transform: translateY(10px);
     transition: 0.5s all;
     opacity: 0;
+  }
+
+  .wrapper{
+    overflow: hidden;
   }
 }
